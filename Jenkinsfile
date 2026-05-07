@@ -9,12 +9,6 @@ pipeline {
 
     stages {
 
-        stage('Clone') {
-            steps {
-                git 'https://github.com/riconpriyankara/CurrencyConvertor.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 bat 'mvn clean compile'
